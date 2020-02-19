@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+	<meta charset=UTF-8>
+	<title>计算器</title>	
+	<style type=text/css>
+        	* {
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		background-color: #eee;
+	}
+	.wrap {
+		width: 390px;
+		border: 1px solid #000;
+		margin: 40px auto;
+		background: #A9A9A9;
+	}
+	h1 {
+		width: 300px;
+		font-style: none;
+		font-weight: none;
+		font-size: 20px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		display: inline-block;
+	}
+	span {
+		width: 50px;
+	}
+	.show {
+		width: 350px;
+		height: 50px;
+		text-align: right;
+		line-height: 60px;
+		margin: 0 auto;
+		background: #fff;
+		box-sizing: border-box;
+		padding: 0 10px; 
+		overflow: hidden;
+		text-overflow:ellipsis; 
+		font-size: 30px;
+		font-weight: 800;
+	}
+	.show2 {
+		margin: 0 auto;
+		width: 350px;
+		height: 40px;
+		color: #eee;
+	}
+	.show2 span.hint {
+		float: left;
+		width: 60px;
+		height: 100%;
+		text-align: center;
+		line-height: 40px;
+	}
+	.show2 span.hint-content {
+		float: right;
+		width: 290px;
+		height: 100%;
+		line-height: 40px;
+		text-overflow:ellipsis; 
+		overflow:hidden;
+	}
+	ul {
+		list-style: none;
+		width: 350px;
+		overflow: hidden;
+		background: #A9A9A9;
+		border: 1px solid #fff;
+		margin: 0px auto;
+	}
+	ul li {
+		float: left;
+		width: 50px;
+		height: 40px;
+		background: #D3D3D3;
+		color: #000;
+		margin: 10px;
+		text-align: center;
+		line-height: 40px;
+		cursor: pointer;
+		border-radius: 5px;
+		/*border: 1px solid #fff*/
+	}
+	ul li.zero {
+		width: 120px;
+	}
+	ul li.operator {
+		background-color: #7B8489;
+	}
+	ul li.eval {
+		width: 120px;
+		background-color: #5D6569;
+	}
+	ul li.operate2{
+		background-color: #DC6615;
+	}
+	.prompt {
+		width: 350px;
+		height: 40px;
+		color: #BE5A5A;
+		line-height: 40px;
+		text-align: center;
+	}
+    </style>
+</head>
+<body>
+	<div class=wrap>
+		<h1>计算器-私人定制</h1>
+		<span>&copy;Hai361</span>
+		<div class=show id=screen></div>
+		<div class=show2 id=show2>
+			<span class=hint>算式：</span>
+			<span id=show class=hint-content></span>
+		</div>
+		<ul>
+			<li class=number>7</li>
+			<li class=number>8</li>
+			<li class=number>9</li>
+			<li class="operate2 back">Back</li>
+			<li class="operate2 clear">C</li>
+			<li class=number>4</li>
+			<li class=number>5</li>
+			<li class=number>6</li>
+			<li class=operator>+</li>
+			<li class=operator>-</li>
+			<li class=number>1</li>
+			<li class=number>2</li>
+			<li class=number>3</li>
+			<li class=operator>×</li>
+			<li class=operator>÷</li>		
+			<li class="zero number">0</li>	
+			<li class=point>.</li>
+			<li class=eval>=</li>		
+		</ul>
+		<div class=prompt id=prompt></div>
+	</div>
+ <script src=bundle.min.c61211615ca85ed0b745.js></script>
+<script type=text/javascript src=bundle.min.5206909fd80263424604.js></script></body>
+</html>
